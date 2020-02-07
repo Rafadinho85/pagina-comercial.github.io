@@ -1,0 +1,287 @@
+body{
+    margin: 0; /*margenes*/
+    font-family: 'Poppins', sans-serif;/*tipografia*/
+}
+
+header .contenedor {
+    display: flex; /*ordenar los elementos a izquierda*/
+    justify-content: space-around; /*espacios entre elementos*/
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li {
+    list-style: none; /*eliminamos estilos de lista*/
+    margin-right: 15px; 
+}
+a {
+    text-decoration: none; /*quitamos subrayado */
+}
+.contenedor {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+header {
+    background: linear-gradient(rgba(84,93,220,.9), rgba(96,171,245,.9)), url(/imagenes/fondo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+#contenedor-titulo-flex {
+    display: flex;
+    justify-content: center;
+    margin: 18vh 0;
+    max-width: 2040px;
+    width: 100%;
+}
+h1{
+    font-size: 60px;
+    color: #ffffff;
+    margin: 0;
+}
+h2{
+    font-size: 25px;
+    color: aliceblue;
+       
+}
+.contenedor-titulo {
+    text-align: center;
+}
+.contenedor-titulo a, #sobre-mi a, #blog a, #que-esperas a,
+#contacto input[type="submit"]
+{
+    font-size: 14px;
+    color: #ffffff;
+    background: #5cb8ff;
+    padding: 14px 24px;
+    display: inline-block;
+}
+
+p.logo {
+    color: #ffffff;
+    font-size: 20px;
+}
+nav ul li a {
+    color: #ffffff;
+}
+/*SECCION DE SOBRE MI*/
+
+ h3 {
+    text-align: center; /*nos permite centrar el texto*/
+    font-size: 50px;    /*tamaño letra*/
+    font-weight: normal;
+}
+
+#sobre-mi .contenedor-sobremi{
+    display: flex ;
+    justify-content: space-around;
+}
+#sobre-mi .texto{
+    width: 42%;
+    
+}
+/*SECCION SERVICIOS*/
+.contenedor-servicios{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;/*si detecta que el contenido esta ocupando mucho lugar que pase a la siguiente linea*/
+    color: #ffffff;
+}
+.servicio {
+    width: 24%;
+    padding: 34px 30px 38px 30px;
+    border-radius: 10px;/*para dar un borde redondeando en las esquinas*/
+    margin-bottom:40px;/*dar espacio hacia los elementos de abajo*/
+    position: relative;   
+}
+.servicio h4 {
+    font-size: 30px;
+    margin: 0;
+}
+.servicio p {
+    margin-bottom: 20px;
+    height: 194px;/*le indicamos que cada parrafo sea del mismo tamaño*/
+}
+.contenedor-servicios .violeta {
+background: 
+linear-gradient(to top, #5055DF,
+#6d68f3);/*to top nos indica que el gradiente vaya de abajo hacia arriba*/
+box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37);/*sombra de la caja */    
+}
+.contenedor-servicios .celeste {
+background: 
+linear-gradient(to top, #40a8f9,
+#5cb8ff);
+box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .3);    
+}
+
+.ondas {
+    position: absolute;/*nos permite definir la posicion absoluta de la imagen solo funciona si en el elemento tenemos position relative */
+    left: 0;
+    bottom: 0;
+}
+.icono {
+     float: right; /*floten hacia la derecha
+     */}
+
+/*
+SECCION MIS TRABAJOS
+*/
+button.owl-prev, button.owl-next {
+    font-size: 40px !important;/*TAMAÑO DE LA FUENTE Y !IMPORTANT SIGNIFICA QUE ESTE ESTILO ES MAS IMPORTANTE */
+}
+span {
+    color: rgba(84,93,220,.9);
+}
+/*
+SECCION POR QUE TRABAJAR CONMIGO
+*/
+.contenedor-trabajar {
+    display: flex; /*pone los elementos en horizontal*/
+    flex-wrap: wrap; /*si detecta que los elementos ocupan mucho lugar lo pasan para la siguiente linea*/
+    justify-content: space-around; /*crear espacio entre los items*/
+}
+#por-que-trabajar .item {/*hacemos esto para achicar los items y que se queden en una misma con el flex-wrap*/
+    width: 28%;
+    text-align: center;
+}
+#por-que-trabajar ul li {
+    list-style: none;
+}
+#por-que-trabajar ul li:nth-child(2) {/*aplicamos los cambios al elemento hijo numero 2*/
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+#por-que-trabajar ul li:nth-child(3) {/*aplicamos los cambios al elemento hijo numero 2*/
+    line-height: 31px;/*line-height es el alto de linea*/;
+}
+/*SECCION DEL BLOG*/
+#blog {
+    background: #F9FAFC;
+}
+#blog .contenedor-publicaciones {
+    display: flex;
+    justify-content: space-around;
+}
+#blog .publicacion {
+   width: 30%;
+   box-shadow: 1px 1px 14px #ccc;/*sombra*/
+}
+#blog img {
+    width: 100%;
+}
+#blog .contenido {
+    background: #ffffff;
+    padding: 20px;
+}
+#blog h4 {
+    font-size: 23px;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+#blog p {
+    color: #5A6169;
+    line-height: 24px;
+    font-size: 16px;
+}
+#blog a {
+   width: 87;
+}
+
+/*SECCION QUE ESPERAS*/
+
+#que-esperas {
+    background: linear-gradient(rgba(84,93,220,.94),
+    rgba(96,171,245,.9));
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 40px;
+}
+#que-esperas h3 {
+    font-size: 23px;
+    color: #ffffff;
+}
+/* SECCION CONTACTO*/
+
+#contacto form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 77%;
+    margin: auto;
+}
+input[type="text"], input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 2px solid #5cb8ff;
+    font-size: 17px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+textarea {
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 2px solid #5cb8ff;
+    font-size: 17px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+#contacto input[type="submit"]{
+    width: 166px;
+    margin: auto;
+}
+
+/*SECCION CONTACTO INFO */
+
+.contacto-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.contacto-info img {
+    width: 28px;
+    vertical-align: middle;/*para centrar la imagen a la mitad del texto*/
+    margin-right: 10px;
+}
+footer {
+    background: #2f2f2f;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+footer .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+footer img {
+    margin: 0 40px;/*para separar las imagenes*/
+    transform: rotate();/*para rotar nuestra imagen digamso que en empieza en la cordenada 0"*/
+    transition: 0.4s;
+}   
+footer img:hover {/*cuando el mouse pase por encima de la imagen*/
+    transform: rotate(360deg);/*rote a 360 grados*/
+    transition: 0.4s;
+}
+footer p {
+    color: #ffffff;
+    margin-top: 40px;
+}
+/*seccion boton whatsapp*/
+#whatsapp {
+    position: fixed;
+    top: 85%;
+    right: 5%;
+}
+html {
+    scroll-behavior: smooth;
+}
+#mis-trabajos, #sobre-mi, #por-que-trabajar, #blog, #contacto, #servicios {
+    padding: 90px 0;
+}
